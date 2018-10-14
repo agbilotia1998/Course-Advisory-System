@@ -139,8 +139,8 @@
 	=>
 	(if (= (check_interest (bind ?interestList (create$ "Logic" "Art" "Politics")) 4) true) then
 		(if (= (check_grade (bind ?gradeList (create$ "Mathematics" "English" "Hindi")) 4) true) then
-			(printout t "LAW" crlf)
-			(assert (subject (name "Law") (description "LAW")))
+			(assert (subject (name "Law") (description "Deals with writing legal documents, offerring legal advice and representstion to 
+     people or companies")))
 		)
 	)
 )
@@ -149,8 +149,7 @@
 	(if (= (check_interest (bind ?interestList (create$ "Management")) 5) true) then
 		(if (= (check_interest (bind ?interestwList (create$ "Logic" "Art")) 4) true) then
 			(if (= (check_grade (bind ?gradeList (create$ "Mathematics" "English")) 2) true) then
-				(printout t "MANAGEMENT" crlf)
-				(assert (subject (name "Management") (description "Management")))
+				(assert (subject (name "Management") (description "Deals with Management")))
 			)
 		)
 	)
@@ -159,8 +158,7 @@
 	=>
 	(if (= (check_interest (bind ?interestList (create$ "Logic" "Art")) 4) true) then
 		(if (= (check_grade (bind ?gradeList (create$ "Mathematics" "English")) 1) true) then
-			(printout t "BUSINESS" crlf)
-			(assert (subject (name "Business") (description "Business")))
+			(assert (subject (name "Business") (description "Deals with Business")))
 		)
 	)
 )
@@ -169,8 +167,7 @@
 	(if (= (check_interest (bind ?interestList (create$ "Management" "Catering")) 5) true) then
 		(if (= (check_grade (bind ?gradeList (create$ "Mathematics" "English")) 4) true) then
 			(if (= (check_grade (bind ?gradewList (create$ "Homescience")) 5) true) then	
-				(printout t "CATERING AND HOTEL MANAGEMENT" crlf)
-				(assert (subject (name "Catering and Hotel Management") (description "Catering and Hotel Management")))
+				(assert (subject (name "Catering and Hotel Management") (description "Deals with the activities of providing food and drink for a number of people  and managing a hotel.")))
 			)	
 		)
 	)
@@ -181,8 +178,8 @@
 		(if (= (check_interest (bind ?interestwList (create$ "Logic" "Art")) 4) true) then
 			(if (= (check_grade (bind ?gradeList (create$ "Mathematics" "English")) 2) true) then
 				(if (= (check_grade (bind ?gradewList (create$ "Biology" "Chemistry")) 7) true) then	
-					(printout t "MICROBIOLOGY" crlf)
-					(assert (subject (name "Microbiology") (description "Microbiology")))
+					(assert (subject (name "Microbiology") (description "Deals with the study of small living things such as bacteria and their
+      effects on people.")))
 				)
 			)
 		)
@@ -192,8 +189,7 @@
 	=>
 	(if (= (check_interest (bind ?interestList (create$ "Science" "Farming")) 5) true) then
 		(if (= (check_grade (bind ?gradeList (create$ "Hindi" "Biology")) 4) true) then
-			(printout t "AGRICULTURE" crlf)
-			(assert (subject (name "Agriculture") (description "Agriculture")))
+			(assert (subject (name "Agriculture") (description "Study of farming and animals")))
 		)
 	)
 	
@@ -203,8 +199,8 @@
 	(if (= (check_interest (bind ?interestList (create$ "Science" "Architecture")) 5) true) then
 			(if (= (check_grade (bind ?gradeList (create$ "Mathematics" "English")) 2) true) then
 				(if (= (check_grade (bind ?gradewList (create$ "Physics")) 7) true) then
-					(printout t "MECHANICAL ENGINEERING" crlf)
-					(assert (subject (name "Mechanical Engineering") (description "Mechanical Engineering")))
+					(assert (subject (name "Mechanical Engineering") (description "It is engineering concerned primarily with the industrial application of mechanics and with the
+	  production of tools, machinery, and their products")))
 				)
 			)
 		
@@ -214,8 +210,7 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Art")) 6) true) then
 			(if (= (check_grade (bind ?gradeList (create$ "Mathematics" "English")) 2) true) then
-				(printout t "FASHION DESIGN" crlf)
-				(assert (subject (name "Fashion Design") (description "Fashion Design")))
+				(assert (subject (name "Fashion Design") (description "Deals with clothings and fashion design")))
 			)
 		)
 )
@@ -223,8 +218,7 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Politics" "History")) 5) true) then
 			(if (= (check_grade (bind ?gradeList (create$ "Mathematics" "English")) 1) true) then
-				(printout t "COMMERCE" crlf)
-				(assert (subject (name "Commerce") (description "Commerce")))
+				(assert (subject (name "Commerce") (description "Deals with activities and procedures involved in buying and selling things.")))
 			)
 		)
 )
@@ -233,8 +227,7 @@
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Politics" "History" "Media")) 5) true) then
 			(if (= (check_grade (bind ?gradeList (create$ "Mathematics" "English" "Hindi")) 1) true) then
 				(if (= (check_grade (bind ?gradewList (create$ "Civics" "History" "Geography")) 4) true) then
-					(printout t "JOURNALISM" crlf)
-					(assert (subject (name "Journalism") (description "Journalism")))
+					(assert (subject (name "Journalism") (description "Deals with the study of collecting news and writing about it for newspapers, magazines, television, or radio.")))
 				)			
 			)
 		)
@@ -243,8 +236,7 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Politics" "Media")) 5) true) then
 			(if (= (check_grade (bind ?gradeList (create$  "English" "Mathematics" "Hindi")) 1) true) then
-				(printout t "MASS COMMUNICATION" crlf)
-				(assert (subject (name "Mass Communication") (description "Mass Communication")))
+				(assert (subject (name "Mass Communication") (description "Deals with the study of communication")))
 			)
 		)
 )
@@ -252,8 +244,7 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Science" "Inventions")) 7) true) then
 			(if (= (check_grade (bind ?gradeList (create$  "English" "Physics" "Geography")) 4) true) then
-				(printout t "GEOLOGY" crlf)
-				(assert (subject (name "Geology") (description "Geology")))
+				(assert (subject (name "Geology") (description "Deals with the study of the Earth's structure, surface, and origins.")))
 			)
 		)
 )
@@ -261,8 +252,7 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Science" "Inventions")) 6) true) then
 			(if (= (check_grade (bind ?gradeList (create$  "Mathematics" "Physics" "Geography")) 2) true) then
-				(printout t "MARINE ENGINEERING" crlf)
-				(assert (subject (name "Marine Engineering") (description "Marine Engineering")))
+				(assert (subject (name "Marine Engineering") (description "Study of marine life and science.")))
 			)
 		)
 )
@@ -270,8 +260,7 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Science" "Architecture")) 7) true) then
 			(if (= (check_grade (bind ?gradeList (create$  "Mathematics" "Physics" "Homescience")) 3) true) then
-				(printout t "ARCHITECHTURE" crlf)
-				(assert (subject (name "Architechture") (description "Architechture")))
+				(assert (subject (name "Architechture") (description "Deals with the art and practice of planning and designing buildings:")))
 			)
 		)
 )
@@ -279,8 +268,8 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Science" "Media")) 5) true) then
 			(if (= (check_grade (bind ?gradeList (create$  "Mathematics" "English" "History")) 3) true) then
-				(printout t "COMPUTER SCIENCE" crlf)
-				(assert (subject (name "Computer Science") (description "Computer Science")))
+				(assert (subject (name "Computer Science") (description "Study of computers, their design and their uses for various tasks, 
+	including design and development of computer hardware and software.")))
 			)
 		)
 )
@@ -288,8 +277,7 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Media" "History")) 6) true) then
 			(if (= (check_grade (bind ?gradeList (create$  "English" "Civics" "Homescience")) 3) true) then
-				(printout t "ECONOMICS" crlf)
-				(assert (subject (name "Economics") (description "Economics")))
+				(assert (subject (name "Economics") (description "Study of the way in which money, industry, and trade are organized in a society.")))
 			)
 		)
 )
@@ -298,9 +286,8 @@
 	(if (= (check_interest (bind ?interestList (create$ "Science")) 5) true) then
 		(if (= (check_interest (bind ?interestwList (create$ "Logic" "Art")) 4) true) then
 			(if (= (check_grade (bind ?gradeList (create$ "Mathematics")) 5) true) then
-				(if (= (check_grade (bind ?gradewList (create$ "English")) 3) true) then	
-					(printout t "STATISTICS" crlf)
-					(assert (subject (name "Statistics") (description "Statistics")))
+				(if (= (check_grade (bind ?gradewList (create$ "English")) 3) true) then
+					(assert (subject (name "Statistics") (description "Deals with the collection, analysis, interpretation, and presentation of masses of numerical data")))
 				)
 			)
 		)
@@ -312,8 +299,7 @@
 		(if (= (check_interest (bind ?interestwList (create$ "Logic" "Medicine")) 4) true) then
 			(if (= (check_grade (bind ?gradeList (create$ "English")) 2) true) then
 				(if (= (check_grade (bind ?gradewList (create$ "Biology" "Chemistry")) 7) true) then	
-					(printout t "PHARMACY" crlf)
-					(assert (subject (name "Pharmacy") (description "Pharmacy")))
+					(assert (subject (name "Pharmacy") (description "Deals with the science of preparing medicines.")))
 				)
 			)
 		)
@@ -323,8 +309,7 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Science")) 8) true) then
 			(if (= (check_grade (bind ?gradeList (create$  "English" "Mathematics")) 5) true) then
-				(printout t "MATHEMATICS" crlf)
-				(assert (subject (name "Mathematics") (description "Mathematics")))
+				(assert (subject (name "Mathematics") (description "Study of mathematics and one can also teach in this field")))
 			)
 		)
 )
@@ -332,10 +317,10 @@
 	=>
 		(if (= (check_interest (bind ?interestList (create$ "Logic" "Sports" "Science")) 5) true) then
 			(if (= (check_grade (bind ?gradeList (create$  "English" "PEd" "Homescience")) 3) true) then
-				(printout t "PHYSICAL EDUCATION AND SPORTS" crlf)
-				(assert (subject (name "Physical Educaion and Sports") (description "Physical Educaion and Sports")))
+				(assert (subject (name "Physical Educaion and Sports") (description "Study of the science behind physical exercises.")))
 			)
 		)
 )
 (prompt)
 (run)
+(facts)
