@@ -1,6 +1,9 @@
 (clear)
 
 (deffunction prompt()
+	;Takes user input for grades in different subjects 
+
+	(printout t "Enter Grades on a scale of 1-10" crlf)
     (printout t "Mathematics grade: ")
     (bind ?answer (read))
     (call ?grades put "Mathematics" ?answer)
@@ -46,7 +49,8 @@
     (call ?grades put "Homescience" ?answer)
 
     
-
+	; Takes user input for interest levels in different fields
+	(printout t "Enter Interest Levels on a scale of 1-10" crlf)
     (printout t "Interest in Logic: ")
     (bind ?answer (read))
     (call ?interests put "Logic" ?answer)
@@ -100,8 +104,10 @@
     (call ?interests put "Media" ?answer)    
 )
 
+; defines how the system stores facts in runtime
 (deftemplate subject (slot name) (slot description))
 
+; function to check if interest level is above threshold
 (deffunction check_interest(?interestList ?threshold)
 	(bind ?flag 0)
 	(foreach ?interest ?interestList
@@ -117,6 +123,7 @@
 	)
 )
 
+; function to check if grade value is above threshold
 (deffunction check_grade(?gradeList ?threshold)
 	(bind ?flag 0)
 	(foreach ?grade ?gradeList
@@ -132,9 +139,12 @@
 	)
 )
 (reset)
+
+;creates two hash tables to store user input
 (bind ?interests (new java.util.Hashtable))
 (bind ?grades (new java.util.Hashtable))
 
+;rules to check if any course is suitable considering the interest and grade level  
 (defrule can_take_law
 	=>
 	(if (= (check_interest (bind ?interestList (create$ "Logic" "Art" "Politics")) 4) true) then
